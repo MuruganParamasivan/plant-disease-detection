@@ -1,0 +1,9 @@
+tensorflow>=2.15
+tensorflow-datasets>=4.9
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+pillow
+streamlit
