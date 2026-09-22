@@ -1,9 +1,14 @@
-tensorflow>=2.15
-tensorflow-datasets>=4.9
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-pillow
-streamlit
+# Verified on Windows 11 / Python 3.13 (CPU) with the versions in the
+# right-hand comments. Colab usually ships its own TensorFlow build - there,
+# install the rest and leave TF alone (see README, "Full training on Colab").
+#
+# TensorFlow >= 2.16 means Keras 3, which the model/Grad-CAM code assumes.
+tensorflow>=2.20,<2.22        # verified 2.21.0 (pulls keras 3.15.1)
+tensorflow-datasets>=4.9      # verified 4.9.10
+numpy>=1.26                   # verified 2.5.3
+pandas>=2.0                   # verified 3.0.6
+matplotlib>=3.7               # verified 3.11.2  (colormaps API needs >=3.6)
+seaborn>=0.13                 # verified 0.13.2
+scikit-learn>=1.3             # verified 1.9.1
+pillow>=10.0                  # verified 12.3.0
+streamlit>=1.40               # verified 1.64.0  (st.bar_chart horizontal=)
