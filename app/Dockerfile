@@ -1,4 +1,4 @@
-# Streamlit demo image: packages the app *and* a trained model, so
+# Streamlit demo image: packages the app and a trained model, so
 # `docker run` serves predictions without any retraining.
 #
 # Build from the REPOSITORY ROOT (the build context needs src/ and models/):
