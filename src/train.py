@@ -1,6 +1,6 @@
 """Train the baseline CNN or the MobileNetV2 transfer model.
 
-Examples
+Ex
 --------
 Smoke test (CPU, minutes, no download)::
 
