@@ -1,5 +1,4 @@
-"""tf.data input pipeline for the PlantVillage classifier.
-
+"""
 Design notes
 ------------
 * PlantVillage has a single TFDS ``train`` split, so train/val/test are carved
