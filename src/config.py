@@ -1,5 +1,4 @@
-"""Project-wide constants and reproducibility helpers.
-
+"""
 Every module imports its constants from here so that the data pipeline, the
 training script, the evaluation script and the Streamlit app agree on image
 size, preprocessing and where artifacts live.
