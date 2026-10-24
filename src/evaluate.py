@@ -1,6 +1,6 @@
 """Class-aware evaluation of a saved model, with Grad-CAM explanations.
 
-Examples
+Ex
 --------
     python -m src.evaluate --model-path models/transfer_mobilenetv2_...keras --smoke-test
     python -m src.evaluate --model-path models/best.keras --num-gradcam 12
