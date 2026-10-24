@@ -1,6 +1,6 @@
 """Grad-CAM, implemented directly against the model's last conv feature map.
 
-Shared by ``src/evaluate.py`` and the Streamlit app so the explanation shown
+By ``src/evaluate.py`` and the Streamlit app so the explanation shown
 in the demo is produced by exactly the same code as the one in the report.
 
 Why it is written this way: the transfer model inlines its backbone into a
