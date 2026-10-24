@@ -1,4 +1,4 @@
-"""Model builders: a small baseline CNN and a transfer-learning classifier.
+"""Model builders: a baseline CNN and a transfer-learning classifier.
 
 Both models expect inputs that are **already preprocessed** by the data
 pipeline (``mobilenet_v2.preprocess_input`` -> float32 in [-1, 1]); there is
