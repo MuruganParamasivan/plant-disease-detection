@@ -1,8 +1,4 @@
-# Verified on Windows 11 / Python 3.13 (CPU) with the versions in the
-# right-hand comments. Colab usually ships its own TensorFlow build - there,
-# install the rest and leave TF alone (see README, "Full training on Colab").
-#
-# TensorFlow >= 2.16 means Keras 3, which the model/Grad-CAM code assumes.
+
 tensorflow>=2.20,<2.22        # verified 2.21.0 (pulls keras 3.15.1)
 tensorflow-datasets>=4.9      # verified 4.9.10
 numpy>=1.26                   # verified 2.5.3
