@@ -5,9 +5,7 @@ AI/ML Specialisation Capstone — solo build, 3-week timeline.
 An image classifier that takes a plant-leaf photo and predicts which of the 38
 PlantVillage classes it belongs to, with a confidence score and a Grad-CAM
 explanation, deployed as a Streamlit demo (Dockerised).
-
 ---
-
 ## Scope
 
 - **Primary path:** full **38-class** PlantVillage classification using
@@ -219,8 +217,6 @@ Train (or copy in) a model first — `models/` is gitignored. The image is large
   so they describe the file `evaluate.py` will read.
 
 ## Limitations
-
-Read these before quoting any accuracy number.
 
 1. **PlantVillage is not the field.** Every image is a single detached leaf on a
    uniform lab background. A model trained on it can reach very high test
