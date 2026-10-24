@@ -1,4 +1,4 @@
-"""Streamlit demo: upload a leaf photo, get a prediction and a Grad-CAM view.
+"""Streamlit demo: upload a leaf photo and get a prediction and a Grad-CAM view.
 
 Run from the repository root::
 
