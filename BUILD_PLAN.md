@@ -1,12 +1,8 @@
 # Build Plan — Plant Disease Detection
 
-Phase 1 is done (the EDA + data notebook). Phases 2–4 are the heavier multi-file work —
-each has a ready-to-paste prompt for **Claude Code** so you can delegate the
-implementation and keep your review time for architecture and results.
-
 ---
 
-## Phase 1 — Data + EDA  ✅ (notebooks/01_data_access_and_eda.ipynb)
+## Phase 1 — Data + EDA   (notebooks/01_data_access_and_eda.ipynb)
 
 Loads PlantVillage, inspects the 38 classes, plots the class distribution, shows sample
 images, and builds resized/augmented `train/val/test` tf.data pipelines. Run this end to
@@ -19,7 +15,6 @@ correct `(image, label)` batches.
 
 Goal: a baseline CNN and a MobileNetV2 transfer-learning model, both trained and saved.
 
-**Claude Code prompt:**
 > Create `src/model.py` and `src/train.py` for a PlantVillage classifier.
 > `model.py`: two builders — (1) `build_baseline_cnn(num_classes, img_size=224)` a small
 > Conv/Pool stack with dropout; (2) `build_transfer_model(num_classes, img_size=224,
@@ -40,7 +35,6 @@ val-accuracy and val-loss curves for each into `reports/`.
 
 Goal: honest, class-aware evaluation and Grad-CAM overlays.
 
-**Claude Code prompt:**
 > Create `src/evaluate.py`. Load a saved model and the held-out test set, then produce:
 > overall accuracy and macro F1; a scikit-learn `classification_report` (per-class
 > precision/recall/F1); a confusion matrix saved as a figure; the worst-confused class
@@ -60,7 +54,6 @@ Interpretation notes for your report:
 
 Goal: a demo that loads the trained model and predicts on an uploaded leaf image.
 
-**Claude Code prompt:**
 > Create `app/streamlit_app.py` and `app/Dockerfile`. The Streamlit app loads the saved
 > model once (cached), accepts a leaf-image upload, runs the same preprocessing as
 > training, and displays the predicted class, a confidence score, the top-3 classes, and a
@@ -74,11 +67,3 @@ limit on purpose).
 
 ---
 
-## Cross-cutting
-
-- **Experiment tracking:** a simple CSV/JSON per run (config + final metrics) in
-  `reports/` is enough for a solo capstone; no need for MLflow unless you want it.
-- **Reproducibility:** set seeds, pin versions (requirements.txt), commit notebooks with
-  outputs cleared.
-- **Presentation:** build the 8-slide deck (see the problem statement) as you go — pull
-  figures straight from `reports/`.
